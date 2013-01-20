@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title_v3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/title_v3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_v3"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="#d6d6d6"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:onClick="onClickCancel"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_cancel"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:text="@android:string/cancel"
+                android:textAppearance="?android:attr/textAppearanceButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="#d6d6d6"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:onClick="onClickOk"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_ok"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:text="@android:string/ok"
+                android:textAppearance="?android:attr/textAppearanceButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
